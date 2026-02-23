@@ -1,3 +1,7 @@
+*{
+    margin: 0;
+    padding: 0;
+}
 .hero {
     background-color: black;
     color: rgb(253, 9, 9);
@@ -125,4 +129,23 @@
 .social-links {
 text-align: center;
 display: flex;
+}
+
+
+#sample{
+    background-color: aqua;
+    border: 5px red solid;
+}
+
+.first{
+    border-style: dotted;
+}
+
+.Container{
+    background-color: aqua;
+}
+
+.childContainer{
+    background-color: #a93226;
+    display: flex;
 }
