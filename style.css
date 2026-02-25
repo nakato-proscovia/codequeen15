@@ -141,11 +141,28 @@ display: flex;
     border-style: dotted;
 }
 
-.Container{
+/* .Container{
     background-color: aqua;
-}
+} */
 
 .childContainer{
     background-color: #a93226;
     display: flex;
+    justify-content: space-;
+}
+
+/* blue container */
+.blue-container{
+    border: 3px blue solid;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-items{
+    border: 2px orangered solid;
+    margin: 5px;
+    
+    
 }
