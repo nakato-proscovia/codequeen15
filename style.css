@@ -166,3 +166,8 @@ display: flex;
     
     
 }
+
+/* Bootstrap work */
+.content{
+    background-color: blueviolet;
+}
