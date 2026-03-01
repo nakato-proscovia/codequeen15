@@ -10,14 +10,14 @@
 <body class="bg-light">
 
     <!-- NAVBAR -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top shadow">
         <div class="container">
-            <a class="navbar-brand fw-bold" href="#home">Nakato Proscovia</a>
+            <a class="navbar-brand fw-bold fs-4" href="#home">Nakato <span class="text-danger">Proscovia</span></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-                <ul class="navbar-nav">
+                <ul class="navbar-nav gap-2">
                     <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
                     <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
                     <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
@@ -28,15 +28,32 @@
     </nav>
 
     <!-- HERO SECTION -->
-    <section id="home" class="bg-dark text-white min-vh-100 d-flex align-items-center pt-5">
+    <section id="home" class="bg-dark text-white min-vh-100 d-flex align-items-center">
         <div class="container py-5">
-            <div class="row">
-                <div class="col-lg-8">
-                    <p class="text-danger text-uppercase fw-semibold ls-wide mb-2">Hello, I'm</p>
-                    <h1 class="display-3 fw-bold mb-3">Nakato Proscovia</h1>
-                    <p class="text-danger fs-5 fw-semibold mb-3">PR Strategist & Frontend Developer</p>
-                    <p class="text-secondary fs-5 mb-4">I craft digital experiences that help brands communicate clearly, connect authentically, and show up with purpose online.</p>
-                    <a href="#contact" class="btn btn-danger btn-lg px-4">Get In Touch</a>
+            <div class="row justify-content-center">
+                <div class="col-lg-8 text-center">
+
+                    <!-- decorative top line -->
+                    <div class="d-flex align-items-center justify-content-center gap-3 mb-4">
+                        <div class="bg-danger" style="width:40px; height:2px;"></div>
+                        <span class="text-danger text-uppercase fw-semibold small ls-wide">PR Strategist & Frontend Developer</span>
+                        <div class="bg-danger" style="width:40px; height:2px;"></div>
+                    </div>
+
+                    <h1 class="display-2 fw-bold mb-3">
+                        Hi, I'm <span class="text-danger">Nakato</span><br>Proscovia
+                    </h1>
+
+                    <p class="text-secondary fs-5 mb-5 mx-auto" style="max-width:560px;">
+                        Crafting digital experiences that drive business results and connect brands with their target audiences.
+                    </p>
+
+
+                    <div class="d-flex gap-3 flex-wrap justify-content-center">
+                        <a href="#contact" class="btn btn-danger btn-lg px-5">Let's Connect</a>
+                        <a href="#projects" class="btn btn-outline-light btn-lg px-5">View Projects</a>
+                    </div>
+
                 </div>
             </div>
         </div>
@@ -45,83 +62,117 @@
     <!-- ABOUT SECTION -->
     <section id="about" class="py-5 bg-white">
         <div class="container py-4">
-            <h2 class="fw-bold mb-1">About Me</h2>
-            <div class="border-bottom border-danger border-3 mb-4" style="width:50px"></div>
-            <p class="text-muted mb-5">The person behind the strategy and the code.</p>
+            <div class="mb-5">
+                <h2 class="fw-bold mb-1">About Me</h2>
+                <div class="bg-danger mb-3" style="width:50px; height:3px;"></div>
+                <p class="text-muted">The person behind the strategy and the code.</p>
+            </div>
             <div class="row align-items-center g-5">
                 <div class="col-md-5">
-                    <img src="https://placehold.co/500x400/212529/dc3545?text=Nakato+Proscovia"
+                    <img src="images/personal.jpg"
                          alt="Nakato Proscovia"
-                         class="img-fluid rounded-3 border border-danger border-3 w-100">
+                         class="img-fluid rounded-3 border border-danger border-3 shadow w-100">
                 </div>
                 <div class="col-md-7">
                     <h3 class="fw-bold mb-3">PR Strategist & Frontend Developer</h3>
-                    <p class="text-muted lh-lg">With 5+ years of experience across PR, marketing, and digital communications, I help organizations shape their narratives and translate strategy into impact — both in messaging and in how brands show up online.</p>
-                    <p class="text-muted lh-lg">My career journey hasn't been linear. I've worked across Travel Consulting, Customer Service, Administration, and PR & Marketing — each role strengthening my ability to understand people, systems, and user needs.</p>
-                    <p class="text-muted lh-lg">More recently, I've expanded into frontend development — not as a departure from communications, but as a natural evolution of it.</p>
-                    <a href="#contact" class="btn btn-danger px-4 mt-2">Let's Connect</a>
+                    <p class="text-muted lh-lg">I'm Nakato Proscovia – a PR and marketing strategist who discovered my passion for frontend development. Where I once crafted compelling brand narratives, I now architect digital experiences that speak volumes through clean, intentional code.</p>
+                    <p class="text-muted lh-lg">My background in PR gives me a strategic advantage: I build websites that don't just function beautifully, but communicate effectively and drive meaningful engagement.</p>
+
+                    <!-- Badges organised in a flex wrap -->
+                    <div class="d-flex flex-wrap gap-2 mt-3 mb-4">
+                        <span class="badge bg-danger px-3 py-2">Strategic Communication</span>
+                        <span class="badge bg-dark px-3 py-2">Public Relations</span>
+                        <span class="badge bg-danger px-3 py-2">Stakeholder Engagement</span>
+                        <span class="badge bg-dark px-3 py-2">Frontend Development</span>
+                        <span class="badge bg-danger px-3 py-2">UI/UX Design</span>
+                        <span class="badge bg-dark px-3 py-2">Digital Strategy</span>
+                    </div>
+
+                    <a href="CV/Nakato-Proscovia. CV (1).pdf" download class="btn btn-danger px-4">
+                        <i class="fa-solid fa-download me-2"></i>Download CV
+                    </a>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- PROJECTS SECTION -->
-    <section id="projects" class="py-5 bg-light">
-        <div class="container py-4">
-            <h2 class="fw-bold mb-1">Projects</h2>
-            <div class="border-bottom border-danger border-3 mb-4" style="width:50px"></div>
-            <p class="text-muted mb-5">A few things I've been building along the way.</p>
-            <div class="row g-4">
 
-                <!-- Card 1 -->
+    <!-- PROJECTS SECTION -->
+    <section id="projects" class="py-5 bg-white">
+        <div class="container py-4">
+            <div class="mb-5">
+                <h2 class="fw-bold mb-1">Projects</h2>
+                <div class="bg-danger mb-3" style="width:50px; height:3px;"></div>
+                <p class="text-muted">A few things I've been building along the way.</p>
+            </div>
+
+            <!-- Row 1 — 3 cards -->
+            <div class="row g-4 mb-4">
                 <div class="col-md-4">
                     <div class="card h-100 border-0 shadow-sm border-top border-danger border-3">
-                        <img src="https://placehold.co/400x200/212529/dc3545?text=Personal+Portfolio"
-                             class="card-img-top" alt="Personal Portfolio">
+                        <img src="images/personal.jpg" class="card-img-top" alt="Personal Portfolio" style="height:200px; object-fit:cover;">
                         <div class="card-body p-4">
                             <h5 class="card-title fw-bold">Personal Portfolio Page</h5>
-                            <p class="card-text text-muted small">A responsive one-page personal portfolio built with HTML and CSS from scratch. Features a hero section, service cards, skills grid, and a social media footer.</p>
-                            <a href="#" class="btn btn-danger btn-sm mt-2">View Project</a>
+                            <p class="card-text text-muted small lh-lg">A responsive one-page personal portfolio built with HTML and CSS from scratch. Features a hero section, service cards, skills grid, and a social media footer.</p>
+                            <a href="https://github.com/nakato-proscovia/porfolio" class="btn btn-danger btn-sm">View Project</a>
                         </div>
                     </div>
                 </div>
-
-                <!-- Card 2 -->
                 <div class="col-md-4">
                     <div class="card h-100 border-0 shadow-sm border-top border-danger border-3">
-                        <img src="images/html.jpg"
-                             class="card-img-top" alt="Semantic HTML Build">
+                        <img src="images/business site.jpg" class="card-img-top" alt="Business Website" style="height:200px; object-fit:cover;">
+                        <div class="card-body p-4">
+                            <h5 class="card-title fw-bold">Business Website</h5>
+                            <p class="card-text text-muted small lh-lg">A responsive website for a communications company featuring service showcase, company profile, and contact integration.</p>
+                            <a href="https://github.com/nakato-proscovia/Branding_Hub" class="btn btn-danger btn-sm">View Project</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 border-0 shadow-sm border-top border-danger border-3">
+                        <img src="https://images.unsplash.com/photo-1627777941175-d31f471f3d12?w=800&auto=format&fit=crop&q=60" class="card-img-top" alt="PR Campaign" style="height:200px; object-fit:cover;">
+                        <div class="card-body p-4">
+                            <h5 class="card-title fw-bold">PR Campaign Showcase</h5>
+                            <p class="card-text text-muted small lh-lg">Digital presentation of strategic PR campaigns demonstrating communication strategy and digital execution.</p>
+                            <a href="https://www.instagram.com/reel/DMcqwOzNvgu/" class="btn btn-danger btn-sm">View Project</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Row 2 — 2 cards centered -->
+            <div class="row g-4 justify-content-center">
+                <div class="col-md-4">
+                    <div class="card h-100 border-0 shadow-sm border-top border-danger border-3">
+                        <img src="images/html site.jpg" class="card-img-top" alt="Semantic HTML" style="height:200px; object-fit:cover;">
                         <div class="card-body p-4">
                             <h5 class="card-title fw-bold">Semantic HTML Page Build</h5>
-                            <p class="card-text text-muted small">A clean webpage built using semantic HTML elements — header, nav, main, section, and footer — demonstrating proper structure and hierarchy before any styling.</p>
-                            <a href="#" class="btn btn-danger btn-sm mt-2">View Project</a>
+                            <p class="card-text text-muted small lh-lg">A clean webpage built using semantic HTML elements — header, nav, main, section, and footer — demonstrating proper structure and hierarchy before any styling.</p>
+                            <a href="https://github.com/nakato-proscovia/htmlcv" class="btn btn-danger btn-sm">View Project</a>
                         </div>
                     </div>
                 </div>
-
-                <!-- Card 3 -->
                 <div class="col-md-4">
                     <div class="card h-100 border-0 shadow-sm border-top border-danger border-3">
-                        <img src="images/headshot.jpg"
-                             class="card-img-top" alt="Bootstrap Portfolio">
+                        <img src="images/bootstrap.jpg" class="card-img-top" alt="Bootstrap Portfolio" style="height:200px; object-fit:cover;">
                         <div class="card-body p-4">
                             <h5 class="card-title fw-bold">Bootstrap Portfolio Page</h5>
-                            <p class="card-text text-muted small">A fully responsive portfolio built entirely with Bootstrap 5 — featuring a collapsible navbar, grid layout, project cards, contact form, and mobile-first design.</p>
-                            <a href="#" class="btn btn-danger btn-sm mt-2">View Project</a>
+                            <p class="card-text text-muted small lh-lg">A fully responsive portfolio built entirely with Bootstrap 5 — featuring a collapsible navbar, grid layout, project cards, contact form, and mobile-first design.</p>
+                            <a href="https://github.com/nakato-proscovia/porfolio" class="btn btn-danger btn-sm">View Project</a>
                         </div>
                     </div>
                 </div>
-
             </div>
+
         </div>
     </section>
 
     <!-- CONTACT SECTION -->
-    <section id="contact" class="py-5 bg-white">
+    <section id="contact" class="py-5 bg-light">
         <div class="container py-4">
             <div class="text-center mb-5">
                 <h2 class="fw-bold mb-1">Get In Touch</h2>
-                <div class="border-bottom border-danger border-3 mx-auto mb-4" style="width:50px"></div>
+                <div class="bg-danger mx-auto mb-3" style="width:50px; height:3px;"></div>
                 <p class="text-muted">Have a project or idea? I'd love to hear from you.</p>
             </div>
             <div class="row justify-content-center">
@@ -136,7 +187,7 @@
                     </div>
                     <div class="mb-4">
                         <label for="message" class="form-label fw-semibold">Message</label>
-                        <textarea class="form-control form-control-lg" id="message" rows="5" placeholder="Tell me about your project..."></textarea>
+                        <textarea class="form-control form-control-lg" id="message" rows="5" placeholder="Tell me about your project or inquiry..."></textarea>
                     </div>
                     <div class="d-grid">
                         <button type="submit" class="btn btn-danger btn-lg">Send Message</button>
@@ -159,6 +210,6 @@
         <p class="text-secondary small mb-0">© 2025 Nakato Proscovia. All rights reserved.</p>
     </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
