@@ -114,7 +114,7 @@
                         <div class="card-body p-4">
                             <h5 class="card-title fw-bold">Personal Portfolio Page</h5>
                             <p class="card-text text-muted small lh-lg">A responsive one-page personal portfolio built with HTML and CSS from scratch. Features a hero section, service cards, skills grid, and a social media footer.</p>
-                            <a href="https://github.com/nakato-proscovia/porfolio" class="btn btn-danger btn-sm">View Project</a>
+                            <a href="https://nakato-proscovia.github.io/porfolio/" class="btn btn-danger btn-sm">View Project</a>
                         </div>
                     </div>
                 </div>
@@ -158,7 +158,7 @@
                         <div class="card-body p-4">
                             <h5 class="card-title fw-bold">Bootstrap Portfolio Page</h5>
                             <p class="card-text text-muted small lh-lg">A fully responsive portfolio built entirely with Bootstrap 5 — featuring a collapsible navbar, grid layout, project cards, contact form, and mobile-first design.</p>
-                            <a href="https://github.com/nakato-proscovia/porfolio" class="btn btn-danger btn-sm">View Project</a>
+                            <a href="https://nakato-proscovia.github.io/porfolio/" class="btn btn-danger btn-sm">View Project</a>
                         </div>
                     </div>
                 </div>
@@ -169,33 +169,36 @@
 
     <!-- CONTACT SECTION -->
     <section id="contact" class="py-5 bg-light">
-        <div class="container py-4">
-            <div class="text-center mb-5">
-                <h2 class="fw-bold mb-1">Get In Touch</h2>
-                <div class="bg-danger mx-auto mb-3" style="width:50px; height:3px;"></div>
-                <p class="text-muted">Have a project or idea? I'd love to hear from you.</p>
-            </div>
-            <div class="row justify-content-center">
-                <div class="col-md-7">
+    <div class="container py-4">
+        <div class="text-center mb-5">
+            <h2 class="fw-bold mb-1">Get In Touch</h2>
+            <div class="bg-danger mx-auto mb-3" style="width:50px; height:3px;"></div>
+            <p class="text-muted">Have a project or idea? I'd love to hear from you.</p>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-md-7">
+                <form action="https://formspree.io/f/mgoljayz" method="POST">
                     <div class="mb-3">
                         <label for="name" class="form-label fw-semibold">Full Name</label>
-                        <input type="text" class="form-control form-control-lg" id="name" placeholder="Your full name">
+                        <input type="text" name="name" class="form-control form-control-lg" id="name" placeholder="Your full name" required>
                     </div>
                     <div class="mb-3">
                         <label for="email" class="form-label fw-semibold">Email Address</label>
-                        <input type="email" class="form-control form-control-lg" id="email" placeholder="your@email.com">
+                        <input type="email" name="email" class="form-control form-control-lg" id="email" placeholder="your@email.com" required>
                     </div>
                     <div class="mb-4">
                         <label for="message" class="form-label fw-semibold">Message</label>
-                        <textarea class="form-control form-control-lg" id="message" rows="5" placeholder="Tell me about your project or inquiry..."></textarea>
+                        <textarea name="message" class="form-control form-control-lg" id="message" rows="5" placeholder="Tell me about your project or inquiry..." required></textarea>
                     </div>
                     <div class="d-grid">
                         <button type="submit" class="btn btn-danger btn-lg">Send Message</button>
                     </div>
-                </div>
+                </form>
             </div>
         </div>
-    </section>
+    </div>
+</section>
+
 
     <!-- FOOTER -->
     <footer class="bg-dark text-center py-5">
